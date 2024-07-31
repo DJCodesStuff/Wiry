@@ -3,8 +3,6 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-
-
 app = Flask(__name__)
 
 @app.route('/submit-form', methods=['POST', 'OPTIONS'])
@@ -44,7 +42,6 @@ def submit_form():
                print(f"Error: {e}")
 
            finally:
-               # Quit the SMTP2GO server
                server.quit()
        
        body = str(form_data)
