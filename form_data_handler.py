@@ -54,7 +54,7 @@ def submit_form():
    else:
        response = jsonify({'error': 'Method not allowed'})
 
-   response.headers.add('Access-Control-Allow-Origin', 'https://www.thewiry.com')  # Replace with your React app URL
+   response.headers.add('Access-Control-Allow-Origin', 'https://main.d288nvvv9qetmk.amplifyapp.com')  # Replace with your React app URL
    response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
          
